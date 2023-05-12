@@ -1,0 +1,23 @@
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="5_Main.css">
+</head>
+
+<body>Z
+	<div id="dv1"><p>Melih Yasak SAÜ</P></div>
+	<div id="dv2"><p>Bilgisayar Mühendisliği</P></div>
+	<div id="dv3">
+	  <p class="color_1">
+	   Buranın sitili sınıfla tanımlanmıştır 
+	  </p>  
+	  <p class="color_2">
+	   Buranın sitili p taglarının içindeki sınıflı kullanımla tanımlanmıştır 
+	  </p>   
+	</div>
+    <div id="dv4"><p>Bilgisayar Mühendisliği</p></div>
+	 <div id="dv5"><p>Yazılım Mühendisliği</p></div>
+	 <div id="dv6"><p><a href="http://www.sakarya.edu.tr">Sakarya Üniversitesi</a></p></div>
+	</body>
+</html> 
+ 
