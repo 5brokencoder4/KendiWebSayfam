@@ -3,11 +3,13 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="css/bootstrap.css">
+ <style>
+	@import url("css/all.css");
+ </style>
  <title>İLETİŞİM</title>
 </head>
-<body>
-
+<body id="login">
+<!-- ----------------------------------------------------------------------------------------- -->
 <nav class="navbar navbar-expand-lg ">
   <div class="container-fluid bg-danger"> 
    <div class="col-10">
@@ -36,39 +38,44 @@
       </ul>
 	  </div>
 	  <div class="col-2">
-	  <a class="navbar-brand" href="https://github.com/5brokencoder4">
-       <img src="Resimler/Github.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-       </a> 
-	  <a class="navbar-brand" href="https://www.linkedin.com/in/my54340021/">
-       <img src="Resimler/Linkedin.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-       </a> 
-	   <a class="navbar-brand" href="https://instagram.com/senior_melih?igshid=ZGUzMzM3NWJiOQ==">
-       <img src="Resimler/Instagram.jpeg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-       </a> 
+		<a class="navbar-brand" href="https://github.com/5brokencoder4" >
+			<i class="bi bi-github" style="font-size: 30px;"></i>
+		   </a> 
+		  <a class="navbar-brand" href="https://www.linkedin.com/in/my54340021/" style="font-size: 30px; color:rgb(16, 16, 167)">
+			<i class="bi bi-linkedin"></i>
+		   </a> 
+		   <a class="navbar-brand" href="https://instagram.com/senior_melih?igshid=ZGUzMzM3NWJiOQ==" style="font-size: 30px; color:rgb(151, 13, 13)">
+			<i class="bi bi-instagram"></i>
+		   </a> 
 	  </div>
   </div>
 </nav>
-	
-
- 	<div class="container-fluid bg-danger"> 
-    	<div class="row">
-	     <div class="col-4"></div>
-		 <div class="col-4">
-
-			<form method="post" action="verial.php">
-					<b>E-Posta :</b> 
-					<input type="text" name="ad" required placeholder="Buaraya  giriniz..."><br><br>
-				    <b>ŞİFRE :</b><input type="password" name="şifre" required placeholder="Buaraya şifrenizi giriniz..."><br><br>
-                    <input type="submit" value="Gönder" >
-				</form>
-
+<!-- ----------------------------------------------------------------------------------------- -->
+<section id="contact" class="mySection">
+   <div class="container py-5">
+	<form id="FrmContact" method="post" action="Login.php">
+	<div class="row py-5">
+		<div class="col-3"></div>
+    <div class="col-6">
+		<div class="mb-3">
+			<label for="email" class="form-label text-white">Email adresi</label>
+			<input type="email" id="email" name="email" class="form-control" required placeholder="name@example.com">
+			<div class="invalid-feedback" id="ErrEmail"></div>
 		</div>
+		<div class="mb-3">
+			<label for="password" class="form-label text-white">Şifre</label>
+			<input type="password" id="password" name="password" class="form-control" required placeholder="****" >
+			<div class="invalid-feedback" id="ErrPassword"></div>
 		</div>
+		<div class="text-center">
+			<button type="submit" class="btn btn-danger py-3 d-block w-100">GİRİŞ YAP</button>
+	   </div>
 	</div>
-
-
-
-
-	<script src="bootstrap.js"></script> <script src="myjs.js"></script>
+  </div>
+</form>
+  </div> 
+  </section>
+<!-- ----------------------------------------------------------------------------------------- -->
+	<script src="js/bootstrap/bootstrap.js"></script> <script src="js/custom/extra.js"></script>
 </body>
 </html>
