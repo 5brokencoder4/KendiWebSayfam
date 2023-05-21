@@ -1,9 +1,11 @@
 <!DOCTPE html>
-<html lang="en">
+<html lang="tr">
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="css/bootstrap.css">
+ <style>
+	@import url("css/all.css");
+ </style>
  <title>HAKKIMDA</title>
 </head>
 <body>
@@ -13,7 +15,7 @@
    <div class="col-10">
       <ul class="navbar-nav my-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <button class="btn btn-danger" onclick="btnSayfagecis(this)" >HAKKIMDA</button>
+			<button class="btn btn-danger" onclick="btnSayfagecis(this)" >index</button>
         </li>
         <li class="nav-item">
            <button class="btn btn-danger" onclick="btnSayfagecis(this)">CV</button>
@@ -36,15 +38,15 @@
       </ul>
 	  </div>
 	  <div class="col-2">
-	  <a class="navbar-brand" href="https://github.com/5brokencoder4">
-       <img src="Resimler/Github.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-       </a> 
-	  <a class="navbar-brand" href="https://www.linkedin.com/in/my54340021/">
-       <img src="Resimler/Linkedin.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-       </a> 
-	   <a class="navbar-brand" href="https://instagram.com/senior_melih?igshid=ZGUzMzM3NWJiOQ==">
-       <img src="Resimler/Instagram.jpeg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-       </a> 
+		<a class="navbar-brand" href="https://github.com/5brokencoder4" id="iconGitgub">
+			<i class="bi bi-github" style="font-size: 30px;"></i>
+		   </a> 
+		  <a class="navbar-brand" href="https://www.linkedin.com/in/my54340021/" id="iconLinkedin">
+			<i class="bi bi-linkedin"></i>
+		   </a> 
+		   <a class="navbar-brand" href="https://instagram.com/senior_melih?igshid=ZGUzMzM3NWJiOQ==" id="iconInstagram">
+			<i class="bi bi-instagram"></i>
+		   </a> 
 	  </div>
   </div>
 </nav>
@@ -56,7 +58,7 @@
      <div class="col-5">
 		<img src="Resimler/Malatya5.jpg" alt="Arslantepe Höyüğü" width="600" height="480">
 	 </div>
-      <div class="col-5">
+      <div class="col-6">
 	 <p class="text-dark">
 		2014 yılında UNESCO Dünya Kültür Mirası Listesi geçici listesine alınmış olan Arslantepe Höyüğü 26 Temmuz 2021 tarihinde 
 		Çin'in ev sahipliğinde yapılan UNESCO 44. Dünya Miras Komitesi toplantısında UNESCO Dünya Kültür Mirası Listesi’ne alındı.
@@ -67,11 +69,15 @@
 	    sarayın duvarlarını üzerine Hitit sanatını, dinini yansıtan çok sayıda taş levha (ortostat) bulundu. Aslan ve kral heykelleri ile
 	    bu eserler 1930’lu yıllarda Ankara Anadolu Medeniyetleri Müzesi'ne götürülmüştür ve halen orada sergilenmektedir. Ancak Kralı 
 		Tarhunza ile iki aslan heykeli ve duvar kabartmalarının aynı malzemeden yapılmış birebir kopyaları müzenin girişine yerleştirilmiştir.
+		MÖ 3300-3000 yıllarına ait bir kerpiç saray, MÖ 3600-3500’lere ait tapınak, iki bini aşkın mühür baskısı, kaliteli metal eserler bulunmuştur. Elde edilen veriler göstermektedir ki o dönemde Arslantepe, aristokrasinin doğduğu ve ilk devlet şeklinin ortaya çıktığı resmi, dini ve kültürel bir merkezdir.
+        Saray kompleksinde arsenikli bakır alaşımlı, gümüş kakmalı dünyanın şimdiye kadar bulunabilen ilk kılıçları ile sarayın hemen yanında 
+		MÖ 2900 yılına tarihlenen önemli bir kişinin (belki bir kralın) mezarı da ortaya çıkarılmıştır. Mezardaki zengin ölü hediyeleri ve 
+		mezarı kapatan taş kapak üzerinde bulunan kurban edilmiş 4 genç insan cesedi, bu mezarın bir kral mezarı olduğunu düşündürmektedir.
 	 </p>
 	</div>
     </div>
  </div>
 
-	<script src="bootstrap.js"></script> <script src="myjs.js"></script>
+ <script src="js/bootstrap/bootstrap.js"></script> <script src="js/custom/extra.js"></script>
 </body>
 </html>

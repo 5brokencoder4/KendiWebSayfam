@@ -1,0 +1,98 @@
+<!DOCTPE html>
+<html lang="tr">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+	@import url("css/all.css");
+ </style>
+ <title>İLETİŞİM</title>
+</head>
+<body id="ilgialanlarım">
+
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid bg-danger"> 
+   <div class="col-10">
+      <ul class="navbar-nav my-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+			<button class="btn btn-danger" onclick="btnSayfagecis(this)" >index</button>
+        </li>
+        <li class="nav-item">
+           <button class="btn btn-danger" onclick="btnSayfagecis(this)">CV</button>
+		</li>
+		<li class="nav-item">
+		  <button class="btn btn-danger" onclick="btnSayfagecis(this)">ŞEHRİM</button>
+		</li>     
+		<li class="nav-item">
+		  <button class="btn btn-danger" onclick="btnSayfagecis(this)">MİRASIMIZ</button>
+		</li>      
+		<li class="nav-item">
+		  <button class="btn btn-danger" onclick="btnSayfagecis(this)">İLGİ ALANLARIM</button>
+		</li>       
+		<li class="nav-item">
+		  <button class="btn btn-danger" onclick="btnSayfagecis(this)">LOGİN</button>
+		</li>     
+		<li class="nav-item">
+		  <button class="btn btn-danger" onclick="btnSayfagecis(this)">İLETİŞİM</button>
+		</li>
+      </ul>
+	  </div>
+	  <div class="col-2">
+		<a class="navbar-brand" href="https://github.com/5brokencoder4" id="iconGitgub">
+			<i class="bi bi-github" style="font-size: 30px;"></i>
+		   </a> 
+		  <a class="navbar-brand" href="https://www.linkedin.com/in/my54340021/" id="iconLinkedin">
+			<i class="bi bi-linkedin"></i>
+		   </a> 
+		   <a class="navbar-brand" href="https://instagram.com/senior_melih?igshid=ZGUzMzM3NWJiOQ==" id="iconInstagram">
+			<i class="bi bi-instagram"></i>
+		   </a> 
+	  </div>
+  </div>
+</nav>
+
+<div class="container py-1">
+	<div class="row py-5">
+    <div class="col-6">
+		<div class="mb-3">
+			<h2 class="text-white" id="title"></h2>
+		</div>
+		<div class="text-center">
+			<p class="text-white"  id="explanation"></p>
+	   </div>
+	   <div class="mb-3">
+		<label class="text-white">Tarih:</label>
+		<label class="text-white" id="date"></label>
+	</div>
+	</div>
+	<div class="col-6">
+		<h2 class="text-white">Nasa'dan Günün Fotoğrafı</h2>
+		<img id="img" src="" class="d-block w-100" alt="resim" width="200" height="500">
+	</div>
+  </div>
+  </div> 
+
+<script src="js/bootstrap/bootstrap.js"></script> <script src="js/custom/extra.js"></script>
+<script type="text/javascript">
+    let xmlhttp =new XMLHttpRequest();
+	xmlhttp.onreadystatechange =function(){
+	  if(this.readyState==4 && this.status==200){
+		let data= JSON.parse(this.responseText);
+  
+		let date = data["date"];
+		let explanation = data["explanation"];
+		let title = data["title"];
+		let url = data["url"];
+
+		document.getElementById("title").innerHTML=title;
+		document.getElementById("date").innerText=date;
+		document.getElementById("explanation").innerText=explanation;
+		document.getElementById("img").src=url;
+	  }
+	}
+	let queryFull="https://api.nasa.gov/planetary/apod?api_key=1seU9ylpo3eElyWUBFWySZXrlMatu5UMJBEjblLe";
+	xmlhttp.open("GET",queryFull,true);
+	xmlhttp.send();
+  </script>
+</body>
+</html>
