@@ -3,16 +3,18 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="css/bootstrap.css"><link rel="stylesheet" href="mycss.css">
+ <style>
+	@import url("css/all.css");
+ </style>
  <title>HAKKIMDA</title>
 </head>
-<body style="background-color: rgb(255, 255, 178);">
+<body id="cv">
 <nav class="navbar navbar-expand-lg ">
   <div class="container-fluid bg-danger"> 
    <div class="col-10">
       <ul class="navbar-nav my-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <button class="btn btn-danger" onclick="btnSayfagecis(this)" >HAKKIMDA</button>
+			<button class="btn btn-danger" onclick="btnSayfagecis(this)" >index</button>
         </li>
         <li class="nav-item">
            <button class="btn btn-danger" onclick="btnSayfagecis(this)">CV</button>
@@ -35,15 +37,15 @@
       </ul>
 	  </div>
 	  <div class="col-2">
-	  <a class="navbar-brand" href="https://github.com/5brokencoder4">
-       <img src="Github.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-       </a> 
-	   <a class="navbar-brand" href="https://www.linkedin.com/in/my54340021/">
-       <img src="Linkedin.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-       </a> 
-	   <a class="navbar-brand" href="https://instagram.com/senior_melih?igshid=ZGUzMzM3NWJiOQ==">
-       <img src="Instagram.jpeg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-       </a> 
+		<a class="navbar-brand" href="https://github.com/5brokencoder4" id="iconGitgub">
+			<i class="bi bi-github" style="font-size: 30px;"></i>
+		   </a> 
+		  <a class="navbar-brand" href="https://www.linkedin.com/in/my54340021/" id="iconLinkedin">
+			<i class="bi bi-linkedin"></i>
+		   </a> 
+		   <a class="navbar-brand" href="https://instagram.com/senior_melih?igshid=ZGUzMzM3NWJiOQ==" id="iconInstagram">
+			<i class="bi bi-instagram"></i>
+		   </a> 
 	  </div>
   </div>
 </nav>
@@ -51,32 +53,33 @@
 			<div class="row"> 
 			<div class="col-1"></div>
 			 <div class="col-3">
-			  <nav><img src="KendiResmim.jpg" alt="Kişinin Fotoğrafı" width="250" height="250" class="d-inline-block align-text-top"></nav>
+			  <nav><img src="Resimler/KendiResmim.jpg" alt="Kişinin Fotoğrafı" width="250" height="250" class="d-inline-block align-text-top"></nav>
 			 </div>
 			 <div class="col-3" >
 				<nav>
-			    <h3 style="text-align:left;">Melih Yasak</h3>
-				<p>Gmail: melihyasak10@gmail.com</p>
-				<p>Tel: 90 511 111 1111</p>
-				<p>Doğum Tarihi:01.01.2003</p>
+			    <h3 id="text-white" style="text-align:left;">Melih Yasak</h3>
+				<p id="text-white">Gmail: melihyasak10@gmail.com</p>
+				<p id="text-white">Tel: 90 511 111 1111</p>
+				<p id="text-white">Doğum Tarihi:01.01.2003</p>
 				</nav>
 			  </div>
 			  <div class="col-3" >
 				<nav>
-					<a class="navbar-brand" href="https://github.com/5brokencoder4">Github
-						<img src="Github.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-						</a> <br><br>
-						<a class="navbar-brand" href="https://www.linkedin.com/in/my54340021/">Linkedin
-						<img src="Linkedin.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-						</a> <br><br>
-						<a class="navbar-brand" href="https://instagram.com/senior_melih?igshid=ZGUzMzM3NWJiOQ==">İnstagram
-						<img src="Instagram.jpeg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-						</a>
+					<a class="navbar-brand" href="https://github.com/5brokencoder4" id="iconGitgub">
+						<i class="bi bi-github" style="font-size: 30px;"></i>
+					   </a> <br><br>
+					  <a class="navbar-brand" href="https://www.linkedin.com/in/my54340021/" id="iconLinkedin">
+						<i class="bi bi-linkedin"></i>
+					   </a> <br><br>
+					   <a class="navbar-brand" href="https://instagram.com/senior_melih?igshid=ZGUzMzM3NWJiOQ==" id="iconInstagram">
+						<i class="bi bi-instagram"></i>
+					   </a> 
+					</a> 
 				</nav>
 			  </div>
 		
 		</div>
-		<div class="row" style="height:100px">
+		<div class="row py-3" style="height:100px">
 			<div class="col-1"></div>
 			<div class="col-6" id="rw1">
 			  <section>
@@ -88,7 +91,7 @@
 			<div class="col-3" id="rw1">
 				<aside>
 				  <h3>Diller</h3>
-				  <p>B1 İnigilizce<br> A2 Almanca</p>
+				  <p>A2 İngilizce</p>
 				</aside>
 			  </div>
 		</div>
@@ -126,6 +129,6 @@
 			  </div>
 		</div>
 	 
-	<script src="bootstrap.js"></script> <script src="myjs.js"></script>
+		<script src="js/bootstrap/bootstrap.js"></script> <script src="js/custom/extra.js"></script>
 </body>
 </html>
