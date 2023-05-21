@@ -1,0 +1,191 @@
+<!DOCTPE html>
+<html lang="tr">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+	@import url("css/all.css");
+ </style>
+ <title>İLETİŞİM</title>
+</head>
+<body id="iletisim">
+
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid bg-danger"> 
+   <div class="col-10">
+      <ul class="navbar-nav my-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+			<button class="btn btn-danger" onclick="btnSayfagecis(this)" >index</button>
+        </li>
+        <li class="nav-item">
+           <button class="btn btn-danger" onclick="btnSayfagecis(this)">CV</button>
+		</li>
+		<li class="nav-item">
+		  <button class="btn btn-danger" onclick="btnSayfagecis(this)">ŞEHRİM</button>
+		</li>     
+		<li class="nav-item">
+		  <button class="btn btn-danger" onclick="btnSayfagecis(this)">MİRASIMIZ</button>
+		</li>      
+		<li class="nav-item">
+		  <button class="btn btn-danger" onclick="btnSayfagecis(this)">İLGİ ALANLARIM</button>
+		</li>       
+		<li class="nav-item">
+		  <button class="btn btn-danger" onclick="btnSayfagecis(this)">LOGİN</button>
+		</li>     
+		<li class="nav-item">
+		  <button class="btn btn-danger" onclick="btnSayfagecis(this)">İLETİŞİM</button>
+		</li>
+      </ul>
+	  </div>
+	  <div class="col-2">
+	  <a class="navbar-brand" href="https://github.com/5brokencoder4" >
+	    <i class="bi bi-github" style="font-size: 30px;"></i>
+       </a> 
+	  <a class="navbar-brand" href="https://www.linkedin.com/in/my54340021/" style="font-size: 30px; color:rgb(16, 16, 167)">
+		<i class="bi bi-linkedin"></i>
+       </a> 
+	   <a class="navbar-brand" href="https://instagram.com/senior_melih?igshid=ZGUzMzM3NWJiOQ==" style="font-size: 30px; color:rgb(151, 13, 13)">
+		<i class="bi bi-instagram"></i>
+       </a> 
+	  </div>
+  </div>
+</nav>
+	
+<section class="mySection">
+	<div class="container">
+  <div class="text-center mb-5">	
+	<div class="row py-1" ></div>
+	<h3 class="s-heading text-uppercase fw-bold text-white">Yurt Dışı Staj Başvurusu</h3>
+  </div>
+
+  <form id="FrmContact" method="post" action="İletişim.php" novalidate>
+  <div class="row align-items-stretch mb-5">
+  <div class="col-md-6">
+	<div class="form-floating mb-4">
+     <input type="text" id="name" class="form-control" placeholder="Adınız" required>
+	 <label for="name">Adınız*</label>
+	</div>
+	<div class="form-floating mb-4">
+		<input type="email" id="email" class="form-control" placeholder="Email" required>
+		<label for="email" class="form-label">Email Adresiniz*</label>
+	</div>
+	<div class="form-floating mb-4">
+		<input type="password" id="password" class="form-control" placeholder="Şifre" required>
+		<label for="phone">Şifrenizi Oluşturun*</label>
+	</div>
+	<div class="form mb-4">
+		<select class="form-select">
+			<option value="1" selected>Bilgisayar Mühendisliği</option>
+			<option value="2" >Yazılım Mühendisliği</option>
+			<option value="3" >Bilişim Sistemleri Mühendisliği</option>
+		  </select>
+	</div>
+	<div class="form mb-4 ">
+			<div class="form"><label class="form-check-label text-white">
+				Hangi Yazılım Dillerini Biliyorsun </label> </div>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="checkbox1">
+				<label class="form-check-label text-white" for="flexCheckDefault"> C </label>
+			  </div>
+			  <div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="checkbox2" checked>
+				<label class="form-check-label text-white" for="flexCheckChecked"> C++ </label>
+			  </div>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="checkbox3">
+				<label class="form-check-label text-white" for="flexCheckDefault"> C# </label>
+			  </div>
+			  <div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="checkbox4" checked>
+				<label class="form-check-label text-white" for="flexCheckChecked"> Pyhton </label>
+			  </div>
+		  
+	</div>
+  </div>
+  <div class="col-md-6">
+	<div class="form-floating form-textarea mb-md-0" id="txa1">
+		<textarea id="message" class="form-control" placeholder="Mesajınız" required></textarea>
+		<label for="message">Neden yurt dışında staj yapmak istediğinizi belirtiniz ...</label>
+	   </div>
+	   <div class="form-floating mb-4">
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="radio1" id="radio1">
+			<label class="form-check-label text-white" for="flexRadioDefault1">
+			 İlk kez yurt dışına gidiyorum
+			</label>
+		  </div>
+		  <div class="form-check">
+			<input class="form-check-input" type="radio" name="radio2" id="radio2" checked>
+			<label class="form-check-label text-white" for="flexRadioDefault2">
+			Daha önceden de gitmiştim
+			</label>
+		  </div>
+	</div>
+  </div>
+  <div class="text-center">
+	<button type="button" class="btn btn-danger py-3" onclick="jsGonder();">
+		Gönder
+	</button>
+	<button type="reset" class="btn btn-danger py-3">
+		Temizle
+	</button>
+   </div>
+  </div>
+ </form>
+ </div> 
+</section>
+
+
+
+  <script src="js/bootstrap/bootstrap.js"></script> <script src="js/custom/extra.js"></script>
+  <script>
+//javascript ile konrtol yapmak ve göndermek için fnk
+function jsGonder() {
+  if (document.getElementById("name").value == null || document.getElementById("name").value == "") {
+    window.alert("Lütfen Adınız Kısmını Boş Bırakmayınız.");
+    return false;
+  }
+  if (document.getElementById("checkbox1").checked == false && document.getElementById("checkbox2").checked == false
+     &&document.getElementById("checkbox3").checked == false && document.getElementById("checkbox4").checked == false) {
+    window.alert("Lüften Bildiğiniz Programlama Dillerini İşaretleyiniz.")
+    return false;
+  }
+  if (document.getElementById("email").value == null || document.getElementById("email").value == "") {
+    window.alert("Lütfen E-mailiniz Kısmını Boş Bırakmayınız.");
+    return false;
+  }
+  if (document.getElementById("password").value == null || document.getElementById("password").value == "") {
+    window.alert("Lütfen Şifre Kısmını Boş Bırakmayınız.");
+    return false;
+  }
+  if (document.getElementById("message").value == null || document.getElementById("message").value == "") {
+    window.alert("Lütfen Neden Gitmek İstediğinizi Belirtiniz.");
+    return false;
+  }
+  else {
+    var setEmail = document.getElementById("email").value;
+    var indexOfEmail = setEmail.lastIndexOf("@") + 1;
+    var sliceToEmail = setEmail.slice(0, indexOfEmail - 1);
+    var sliceToEmailLength = sliceToEmail.length;
+    var sliceToEmailBack = setEmail.slice(indexOfEmail, setEmail.length);
+    var sliceToEmailBackLength = sliceToEmailBack.length;
+    if (indexOfEmail == 0) {
+      window.alert("Lütfen E-mail Kısmında '@' İşaretini Girmeyi Unutmayınız.");
+      return false;
+    }
+    if (indexOfEmail != 0 && sliceToEmailLength == 0) {
+      window.alert("Lütfen E-mail Kısmında '@' İşaretinden Önceki Kısmı Girmeyi Unutmayınız.");
+      return false;
+    }
+    if (indexOfEmail != 0 && sliceToEmailBackLength == 0) {
+      window.alert("Lütfen E-mail Kısmında '@' İşaretinden Sonraki Kısmı Girmeyi Unutmayınız.");
+      return false;
+    }
+    document.getElementById("FrmContact").submit();
+    return true;
+  }
+}
+
+  </script>
+</body>
+</html>
